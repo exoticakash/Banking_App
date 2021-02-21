@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="layer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Scene2">
+    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" layoutX="50.0" layoutY="150.0" onMouseClicked="#logout" prefHeight="30.0" prefWidth="120.0" text="Logout" textFill="WHITE">
+        <graphic>
+            <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../icons8_exit_48px.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <Font size="14.0" />
+        </font>
+    </JFXButton>
+    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" layoutX="50.0" layoutY="210.0" onMouseClicked="#deposit" prefHeight="30.0" prefWidth="120.0" text="Deposit" textFill="WHITE">
+        <graphic>
+            <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../icons8_Logout_Rounded_Down_48px.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <Font size="14.0" />
+        </font>
+    </JFXButton>
+    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" layoutX="50.0" layoutY="270.0" onMouseClicked="#withdraw" prefHeight="30.0" prefWidth="120.0" text="Withdraw" textFill="WHITE">
+        <graphic>
+            <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../icons8_Logout_Rounded_Up_48px.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <Font size="14.0" />
+        </font>
+    </JFXButton>
+    <JFXButton alignment="TOP_LEFT" buttonType="RAISED" layoutX="50.0" layoutY="330.0" onMouseClicked="#statement" prefHeight="30.0" prefWidth="120.0" text="Statement" textFill="WHITE">
+        <graphic>
+            <ImageView fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../icons8_Paid_Search_48px.png" />
+            </ImageView>
+        </graphic>
+        <font>
+            <Font size="14.0" />
+        </font>
+    </JFXButton>
+    <Label layoutX="560.0" layoutY="19.0" prefHeight="26.0" prefWidth="52.0" text="Balance:" textFill="WHITE" AnchorPane.rightAnchor="188.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="text" layoutX="404.0" layoutY="20.0" prefWidth="150.0" AnchorPane.rightAnchor="20.0" />
+    <Label layoutX="20.0" layoutY="20.0" prefHeight="30.0" text="Customer Name:" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <Label layoutX="20.0" layoutY="70.0" prefHeight="30.0" text="Customer Id:" textFill="WHITE">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <TextField fx:id="CustomerName" layoutX="135.0" layoutY="20.0" />
+    <TextField fx:id="CustomerId" layoutX="135.0" layoutY="72.0" />
+    <AnchorPane fx:id="layer2" layoutX="215.0" layoutY="150.0" prefHeight="210.0" prefWidth="340.0" AnchorPane.rightAnchor="0.0">
+        <TextField fx:id="text1" layoutX="70.0" layoutY="62.0" prefHeight="30.0" prefWidth="200.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <JFXButton buttonType="RAISED" layoutX="135.0" layoutY="139.0" onMouseClicked="#done" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0590cc;" text="Done" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="label" alignment="CENTER" layoutX="130.0" layoutY="14.0" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #049FE6;" text="Label" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </AnchorPane>
+    <Label fx:id="not" alignment="CENTER" layoutX="535.0" layoutY="111.0" prefHeight="30.0" prefWidth="190.0" text="Not Enough Balance !!" textFill="WHITE" AnchorPane.rightAnchor="74.60000000000002">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

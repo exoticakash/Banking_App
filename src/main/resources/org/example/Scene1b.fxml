@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="linear-grad" stylesheets="@background.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Scene1b">
+    <JFXButton buttonType="RAISED" layoutX="376.0" layoutY="315.0" onMouseClicked="#Signin" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0590cc;" text="Signin" textFill="WHITE" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="376.0">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </JFXButton>
+    <JFXTextField fx:id="name" focusColor="#0590cc" labelFloat="true" layoutX="50.0" layoutY="134.0" prefWidth="200.0" promptText="Customer Name" style="-fx-text-fill: white;" unFocusColor="WHITE" />
+    <Label alignment="CENTER" layoutX="269.0" layoutY="38.0" prefHeight="35.0" prefWidth="261.0" text="Welcome to the Bank" textFill="WHITE" AnchorPane.leftAnchor="281.0" AnchorPane.topAnchor="38.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <JFXPasswordField fx:id="pass" focusColor="#0590cc" labelFloat="true" layoutX="50.0" layoutY="214.0" prefWidth="200.0" promptText="Password" style="-fx-text-fill: white;" styleClass="jfx-text-field" unFocusColor="WHITE" />
+    <AnchorPane prefHeight="200.0" prefWidth="170.0" style="-fx-background-color: rgba(128, 128, 128, 0.1);" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label alignment="CENTER" layoutY="172.0" prefHeight="30.0" prefWidth="170.0" text="Or you can Signup" textFill="WHITE" AnchorPane.bottomAnchor="197.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="209.0" onMouseClicked="#Signup" style="-fx-background-color: #0590cc;" text="Signup" textFill="WHITE" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="54.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+    </AnchorPane>
+    <Label fx:id="incorrect" alignment="CENTER" layoutX="292.0" layoutY="358.0" prefHeight="27.0" prefWidth="237.0" text="Incorrect Name or Password" textFill="WHITE">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

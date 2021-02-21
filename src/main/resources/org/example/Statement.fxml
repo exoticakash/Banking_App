@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Statement">
+    <ListView fx:id="list1" layoutX="23.0" layoutY="46.0" prefHeight="340.0" prefWidth="200.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0" />
+    <ListView fx:id="list3" layoutX="550.0" layoutY="42.0" prefHeight="340.0" prefWidth="200.0" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="50.0" />
+    <Label alignment="CENTER" layoutX="589.0" layoutY="15.0" prefHeight="27.0" prefWidth="131.0" text="Time/Date" textFill="WHITE" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ListView fx:id="list2" layoutX="300.0" layoutY="50.0" prefHeight="340.0" prefWidth="200.0" AnchorPane.topAnchor="50.0" />
+    <Label alignment="CENTER" layoutX="328.0" layoutY="15.0" prefHeight="27.0" prefWidth="144.0" text="Transaction" textFill="WHITE" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="88.0" layoutY="15.0" prefHeight="27.0" prefWidth="113.0" text="Amount" textFill="WHITE" AnchorPane.topAnchor="15.0">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>
